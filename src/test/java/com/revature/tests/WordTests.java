@@ -4,10 +4,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
-import com.revatuer.assessors.RevaTest;
 import com.revature.app.WordProblems;
+import com.revature.assessors.RevAssess;
+import com.revature.assessors.RevaTest;
 
+@ExtendWith(RevAssess.class)
 class WordTests {
 
 	@RevaTest(points=10)
