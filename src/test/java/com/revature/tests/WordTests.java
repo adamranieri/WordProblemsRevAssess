@@ -30,8 +30,8 @@ class WordTests {
 	@RevaTest(points=5)
 	void lengthWordChair() {
 		String chair = "chair";
-		String reverse = WordProblems.reverseWord(chair);
-		Assertions.assertEquals("riahc", reverse);
+		int length = WordProblems.findLength(chair);
+		Assertions.assertEquals(5, length);
 	}
 	
 	
